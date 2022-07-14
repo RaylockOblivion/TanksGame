@@ -13,6 +13,7 @@ public class TankController
         this.tModel.SetTankController(this);
         this.tView.SetTankController(this);
         rb = this.tView.getRigidBody();
+        this.tView.ChangeColor(this.tModel.color);
     }
 
     public void Move(float movement, float movementSpeed)
